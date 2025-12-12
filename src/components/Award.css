@@ -1,0 +1,46 @@
+.award {
+  padding: 80px 0;
+  background: var(--bg-light);
+}
+
+.award-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.award-banner {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-banner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.award-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .award {
+    padding: 60px 0;
+  }
+
+  .award-container {
+    padding: 0 1rem;
+  }
+
+  .award-banner {
+    border-radius: 15px;
+  }
+}
+
